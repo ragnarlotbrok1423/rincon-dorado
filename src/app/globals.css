@@ -1,26 +1,37 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../../.flowbite-react/class-list.json";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@theme{
 
+  /*Paleta de Colores*/
+
+  --color-oxford-blue: #061A40;
+  --color-sapphire: #0353A4;
+  --color-bice-blue: #006DAA;
+  --color-prussian-blue: #003559;
+  --color-columbia-blue: #B9D6F2;
+
+    /*paleta de color para toda la parte de la tienda*/
+  --color-dorado-elegante: #C4A035;
+  --color-marfil-suave:#E4E3E1;
+  --color-gris-oscuro:#2F2F2F;
+  --color-gris-medio:#7B7B7B;
+  --color-vino-profundo:#5D3A00;
+  --color-azul-noche:#2C3E50;
+  --color-oro-claro: #F2D287;
+
+  /*Tipografia*/
+  --font-roboto: Roboto, sans-serif;
+
+}
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
