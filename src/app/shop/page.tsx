@@ -4,12 +4,14 @@ import HeroSection from "@/app/components/hero-section";
 import { Roboto } from "next/font/google";
 import Card from "@/app/components/card";
 
+
 const roboto = Roboto({
     subsets: ["latin"],
     weight: ["400", "700"],
 });
 
 export default function Shop (){
+
     return(
         <div className="bg-white">
             <Navbar />
